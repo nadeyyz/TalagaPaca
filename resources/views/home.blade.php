@@ -11,28 +11,27 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
         <link rel="icon" type="image/png" href="{{ asset('img/favicon.png') }}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
-
+        <link href="https://fonts.cdnfonts.com/css/cabinet-grotesk" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
     </head>
     <body class="hero-anime">
 
-      <div class="navigation-wrap bg-light start-header start-style">
+      <header class="navigation-wrap bg-light start-header start-style">
         <div class="container">
           <div class="row">
             <div class="col-12">
               <nav class="navbar navbar-expand-md navbar-light">
 
-                <a class="navbar-brand" href="https://front.codes/" target="_blank"><img src="https://assets.codepen.io/1462889/fcy.png" alt=""></a>
+                <a class="navbar-brand" href="https://front.codes/" target="_blank">Talaga Paca</a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto py-4 py-md-0">
-                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
+                  <ul class="navbar-nav ms-auto py-4 py-md-0">
+                    <li class="nav-item ps-4 ps-md-0 ms-0 ms-md-4 active">
                       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
                       <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">Action</a>
@@ -41,13 +40,13 @@
                         <a class="dropdown-item" href="#">Another action</a>
                       </div>
                     </li>
-                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <li class="nav-item ps-4 ps-md-0 ms-0 ms-md-4">
                       <a class="nav-link" href="#">Portfolio</a>
                     </li>
-                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <li class="nav-item ps-4 ps-md-0 ms-0 ms-md-4">
                       <a class="nav-link" href="#">Agency</a>
                     </li>
-                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <li class="nav-item ps-4 ps-md-0 ms-0 ms-md-4">
                       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
                       <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">Action</a>
@@ -56,10 +55,10 @@
                         <a class="dropdown-item" href="#">Another action</a>
                       </div>
                     </li>
-                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <li class="nav-item ps-4 ps-md-0 ms-0 ms-md-4">
                       <a class="nav-link" href="#">Journal</a>
                     </li>
-                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <li class="nav-item ps-4 ps-md-0 ms-0 ms-md-4">
                       <a class="nav-link" href="#">Contact</a>
                     </li>
                   </ul>
@@ -69,14 +68,15 @@
             </div>
           </div>
         </div>
-      </div>
+      </header>
+
       <div class="section full-height">
         <div class="absolute-center">
           <div class="section">
             <div class="container">
               <div class="row">
                 <div class="col-12">
-            <h1><span>B</span><span>o</span><span>o</span><span>t</span><span>s</span><span>t</span><span>r</span><span>a</span><span>p</span> <span>4</span><br>
+            <h1><span>B</span><span>o</span><span>o</span><span>t</span><span>s</span><span>t</span><span>r</span><span>a</span><span>p</span> <span>5</span><br>
             <span>m</span><span>e</span><span>n</span><span>u</span></h1>
             <p>scroll for nav animation</p>
                 </div>
@@ -96,15 +96,20 @@
           </div>
         </div>
       </div>
+      {{-- <main>
+        <div class="jumbotron text-center my-md-5 py-5">
+          <h5 class="mb-4 ">Welcome to our blog!</h5>
+          <h1 class="fw-extrabold mb-4 text-rainbow animated-rainbow fs-xl ">Tips and tricks to form better money
+              habits.
+          </h1>
+        </div>
+      </main> --}}
+
       <div class="my-5 py-5">
       </div>
 
     <!-- Link to page
     ================================================== -->
-
-      <a href="https://front.codes/" class="logo" target="_blank">
-        <img src="https://assets.codepen.io/1462889/fcy.png" alt="">
-      </a>
 
     </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
