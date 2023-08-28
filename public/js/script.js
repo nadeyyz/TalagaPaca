@@ -2,7 +2,7 @@
 
 /* Please ❤ this if you like it! */
 
-
+AOS.init();
 (function($) { "use strict";
 
 	$(function() {
@@ -49,3 +49,54 @@
 	});
 
   })(jQuery);
+
+  function showLanguages() {
+	$(".dropdown-language").toggleClass("show");
+  }
+  
+  window.onclick = function(event) {
+	if (!event.target.matches('.lang-drpdwn-btn')) {
+	  var dropdowns = $(".dropdown-language");
+	  for (let i = 0; i < dropdowns.length; i++) {
+		var openDropdown = dropdowns[i];
+		if (openDropdown.classList.contains('show')) {
+		  openDropdown.classList.remove('show');
+		}
+	  }
+	}
+  }
+
+
+$(document).ready(function() {
+	$('.carousel').slick({
+	  dots: true,
+	  autoplay: true,
+	  autoplaySpeed: 2500,
+	  arrows: false,
+	  infinite: true,
+	  slidesToShow: 3,
+	  slidesToScroll: 2,
+	  responsive: [
+		{
+		  breakpoint: 1367,
+		  settings: {
+			slidesToShow: 3
+		  }
+		},
+		{
+		  breakpoint: 1200,
+		  settings: {
+			slidesToShow: 2
+		  }
+		},
+		{
+		  breakpoint: 768,
+		  settings: {
+			slidesToShow: 1
+		  }
+		}
+	  ]
+	});
+  });
+  
+  
