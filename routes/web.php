@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/about', function () {
+    return view('components.about');
+});
+
+Route::get('/atraksi-wisata', function () {
+    return view('components.atraksi');
+});
