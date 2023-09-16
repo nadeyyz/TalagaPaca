@@ -92,4 +92,6 @@
         <p class="text-center w-50 m-auto text-description">Desa Talaga Paca terdiri dari 210 kepala keluarga, 95% memiliki matapencaharian utama sebagai petani. Sebelum tahun 1980-an, masyarakat Talaga Paca merupakan Komunitas Adat Terpencil (KAT) yang tinggal di hutan dengan berburu dan meramu hasil hutan. Pemerintah menyebut masyarakat asli Talaga Paca dengan istilah Tugutil, namun mereka menyebut diri sebagai o hongana ma nyawa yang secara harafiah berarti “orang hutan” atau orang yang berasal dari hutan.</p>
         </div>
       </section>
+      <div class="my-5 py-5">
+    </div>
 </x-main-layout>

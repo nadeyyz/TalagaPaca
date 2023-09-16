@@ -84,11 +84,9 @@
         </div>
       </header>
 
-
-      {{$slot}}
-
-      <div class="my-5 py-5">
-      </div>
+      <main>
+        {{$slot}}
+      </main>
 
       <footer class="footer-distributed">
 
