@@ -376,7 +376,7 @@ body.dark .logo img {
 }
 
 /* moving color text */
-/* 
+/*
 @media (min-width: 992px) {
 .jumbotron {
     padding: 0 15%;
@@ -451,7 +451,7 @@ main{
 	text-decoration: none;
 	display: block;
   }
-  
+
   .dropdown-language a:hover {
 	color:#19A7CE;
 	background-color: white !important;
@@ -484,7 +484,7 @@ button {
   padding: 0;
   font-size: inherit;
   font-family: inherit;
-  
+
 }
 button.learn-more {
   width: 12rem;
@@ -562,7 +562,7 @@ button:hover .button-text {
 	  transform: translateX(calc(-250px * 7));
 	}
   }
-  
+
   @keyframes scroll {
 	0% {
 	  transform: translateX(0);
@@ -612,15 +612,15 @@ button:hover .button-text {
   }
 
   /* carousel */
-  
+
   .carousel {
 	width: 100%;
 	padding: 20px;
-	
+
   }
   .carousel-card{
 	/* width: 400px;
-	padding: 20px; 
+	padding: 20px;
 	margin: 0 10px;
 	border: 2px solid white;
 	border-radius: 25px;
@@ -667,13 +667,13 @@ button:hover .button-text {
 	justify-content: center;
 	margin: 20px 0;
   }
-  
+
   /* Customize the individual dots */
   .slick-dots li {
 	margin: 0 5px;
 	list-style: none;
   }
-  
+
   .slick-dots li button {
 	width: 10px;
 	height: 10px;
@@ -688,15 +688,15 @@ button:hover .button-text {
 	font-size: 0;
 	line-height: 0;
   }
-  
-  
+
+
   /* Style the active dot */
   .slick-dots li.slick-active button {
 	background-color: #156D93;
 	width: 12px;
 	height: 12px;
   }
-  
+
 
   /* footer */
 
@@ -848,16 +848,17 @@ button:hover .button-text {
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color:  #33383b;
 	border-radius: 2px;
-
 	font-size: 20px;
 	color: #ffffff;
 	text-align: center;
 	line-height: 35px;
-
 	margin-right: 3px;
 	margin-bottom: 5px;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.footer-distributed .footer-icons a:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .menu-footer{
 	color: white !important;
