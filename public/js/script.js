@@ -75,7 +75,7 @@ $(document).ready(function() {
 	  arrows: false,
 	  infinite: true,
 	  slidesToShow: 3,
-	  slidesToScroll: 2,
+	  slidesToScroll: 1,
 	  responsive: [
 		{
 		  breakpoint: 1367,
