@@ -657,19 +657,21 @@ button:hover .button-text {
     background-repeat: no-repeat;
     background-size: 20%;
     background-position: 96%; */
-	background-size: 300px 100px;
 	padding: 2rem 0px;
 	letter-spacing: 2px;
-	background: url(/img/Halmahera2.png) 96% no-repeat, url(/img/Halmahera2.png) 4% no-repeat
-  }
+	background: url(/img/Halmahera2.png) 96% no-repeat, url(/img/Halmahera2.png) 4% no-repeat;
+    background-size: 25%;
+}
   .text-title {
 	color: #146C94;
+    width: 30%;
+    margin: auto;
 	font-weight: 900;
 	text-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
   }
   .text-description{
 	color: #19A7CE;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	line-height: 30px;
   }
   /* Customize the dots container */
@@ -895,3 +897,125 @@ button:hover .button-text {
 	color: #19A7CE;
 	border: 1px solid #19A7CE;
 }
+
+#atraksi {
+    background-image: url('/img/bg-shadow.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-atraksi{
+    width: 100%;
+    height: 12vw;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.img-atraksi-title{
+    display: block;
+    color: #146C94;
+    font-weight: 900;
+    text-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+    position: relative;
+    left: 10%;
+    font-size: 2vw;
+    top: -30%;
+    width: 90%;
+    color: white;
+}
+.text-sm{
+    font-size: 1.5vw;
+}
+
+.btn-black-transparent {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-left: 0 !important;
+}
+
+.btn-black-transparent:hover {
+    animation: arrowHover 2s;
+    transition: 0.3s ease-in-out;
+    transform: translateX(0px);
+}
+
+@keyframes arrowHover {
+    0% {
+      transform: translateX(10px);
+    }
+    30% {
+      transform: translateX(5px);
+    }
+    80% {
+      transform: translateX(15px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes arrowHoverCircle {
+    0% {
+      transform: translateX(0px);
+    }
+    30% {
+      transform: translateX(-5px);
+    }
+    80% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+
+
+
+  .bgimg-1, .bgimg-2, .bgimg-3,.bgimg-4 {
+    position: relative;
+    opacity: 0.90;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  .bgimg-1 {
+    background-image: url(../img/jungle.jpg);
+    height: 30vw;
+  }
+  .bgimg-2 {
+    background-image: url(../img/AtraksiWisata/BirdWatching/mahasiswa\ 2.jpg);
+    height: 30vw;
+  }
+  .bgimg-3 {
+    background-image: url(../img/AtraksiWisata/Gua/TimPolandia.jpg);
+    height: 30vw;
+  }
+  .bgimg-4 {
+    background-image: url(../img/AtraksiWisata/KelilingDanau/perahu3.jpg);
+    height: 30vw;
+  }
+
+
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3,.bgimg-4 {
+      background-attachment: scroll;
+    }
+  }
+
+  #map {
+    height: 23vw;
+    width: 92%;
+    border-radius: 20px;
+    margin: auto;
+ }
+
+ .w-80 {
+    width: 75%;
+ }

@@ -19,6 +19,14 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
         <link rel="icon" type="image/png" href="{{ asset('img/favicon.png') }}">
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+        <!-- Make sure you put this AFTER Leaflet's CSS -->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
     </head>
     <body class="hero-anime">
 
@@ -28,7 +36,7 @@
             <div class="col-12">
               <nav class="navbar navbar-expand-md navbar-light">
 
-                <a class="navbar-brand" href="https://front.codes/" target="_blank">Talaga Paca</a>
+                <a class="navbar-brand" href="/">Talaga Paca</a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -36,47 +44,42 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ml-auto py-4 py-md-0">
-                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
-                      <a class="nav-link" href="#">Beranda</a>
+                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 {{ Request::routeIs('home') ? 'active' : '' }}">
+                      <a class="nav-link" href="/">{{ __('text.menu.berenda') }}</a>
+                    </li>
+                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 {{ Request::routeIs('atraksi-wisata') ? 'active' : '' }}">
+                      <a class="nav-link" href="/atraksi-wisata">{{ __('text.menu.atraksi') }}</a>
                     </li>
                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                      <a class="nav-link" href="#">Atraksi Wisata</a>
+                      <a class="nav-link" href="/comming-soon">{{ __('text.menu.fasilitas') }}</a>
                     </li>
                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                      <a class="nav-link" href="#">Fasilitas</a>
+                      <a class="nav-link" href="/comming-soon">{{ __('text.menu.produk') }}</a>
                     </li>
                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                      <a class="nav-link" href="#">Produk Lokal</a>
+                      <a class="nav-link" href="/comming-soon">{{ __('text.menu.event') }}</a>
                     </li>
                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                      <a class="nav-link" href="#">Event Wisata</a>
+                      <a class="nav-link" href="/comming-soon">{{ __('text.menu.publikasi') }}</a>
                     </li>
                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                      <a class="nav-link" href="#">Publikasi</a>
+                      <a class="nav-link" href="/comming-soon">{{ __('text.menu.akses') }}</a>
                     </li>
-                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                      <a class="nav-link" href="#">Akses & Narahubung</a>
-                    </li>
-                    {{-- <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                      </div>
-                    </li> --}}
                   </ul>
                 </div>
                 <div class="collapse navbar-collapse" id="langBtn" style="justify-content: right">
                     <div class="pl-4 pl-md-0 ml-0 ml-md-4">
-                      <a onclick="showLanguages()" class="lang-drpdwn-btn nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">EN <img class="mb-1" src="img/en.png" height="19"></a>
-                      <div class="dropdown-language">
-                        <a class="dropdown-item" href="#">English</a>
-                        <a class="dropdown-item" href="#">Indonesia</a>
-                      </div>
-
-                  </ul>
+                        {{-- <a onclick="showLanguages()" class="lang-drpdwn-btn nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            EN <img class="mb-1" src="{{ asset('img/en.png') }}" height="19"></a>
+                        <div class="dropdown-language">
+                            <a class="dropdown-item" href="#">English</a>
+                            <a class="dropdown-item" href="#">Indonesia</a>
+                        </div> --}}
+                        <select class=" Langchange">
+                            <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>En <img class="mb-1" src="{{ asset('img/en.png') }}" height="19"></option>
+                            <option value="id" {{ session()->get('locale') == 'id' ? 'selected' : '' }}>Id <img class="mb-1" src="{{ asset('img/id.png') }}" height="19"></option>
+                        </select>
+                    </div>
                 </div>
               </nav>
             </div>
@@ -97,11 +100,11 @@
               <h3>Talaga Paca</h3>
 
               <p class="footer-links">
-                Aptent convallis risus amet ac quam malesuada magnis non auctor gravida phasellus, molestie.
-              </p>
+                {{ substr(__('text.konten_jumbotron'), 0, 64) }}
+            </p>
               <hr style="border-top: 1px solid white;">
               <div class="footer-company-name d-flex" style="color: white">
-                <img src="img/phone.svg" style="height: 3.5vw">
+                <img src="{{ asset('img/phone.svg') }}" style="height: 3.5vw">
                 <div>
                   Phone <br>
                   <b>+68 123456789</b>
@@ -112,22 +115,22 @@
             <div class="menu-footer col-md-4 col-sm-12">
               <ul class="row">
                 <li class="col-6">
-                  <a href="#">Tentang</a>
+                  <a href="/about">{{ __('text.menu.tentang') }}</a>
                 </li>
                 <li class="col-6">
-                  <a href="#">Fasilitas</a>
+                  <a href="/comming-soon">{{ __('text.menu.fasilitas') }}</a>
+                </li>
+                {{-- <li class="col-6">
+                  <a href="/comming-soon">{{ __('text.menu.akses') }}</a>
+                </li> --}}
+                <li class="col-6">
+                  <a href="/comming-soon">{{ __('text.menu.event') }}</a>
                 </li>
                 <li class="col-6">
-                  <a href="#">Akses</a>
+                  <a href="/comming-soon">{{ __('text.menu.produk') }}</a>
                 </li>
                 <li class="col-6">
-                  <a href="#">Event</a>
-                </li>
-                <li class="col-6">
-                  <a href="#">Wisata</a>
-                </li>
-                <li class="col-6">
-                  <a href="#">Publikasi</a>
+                  <a href="/comming-soon">{{ __('text.menu.publikasi') }}</a>
                 </li>
 
               </ul>
@@ -159,5 +162,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script type="text/javascript">
+        var url = "{{ route('LangChange') }}";
+        $(".Langchange").change(function(){
+            window.location.href = url + "?lang="+ $(this).val();
+        });
+    </script>
     <script src="{{ asset('js/script.js') }}"></script>
 </html>

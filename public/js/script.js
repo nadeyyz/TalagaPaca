@@ -53,7 +53,7 @@ AOS.init();
   function showLanguages() {
 	$(".dropdown-language").toggleClass("show");
   }
-  
+
   window.onclick = function(event) {
 	if (!event.target.matches('.lang-drpdwn-btn')) {
 	  var dropdowns = $(".dropdown-language");
@@ -98,5 +98,14 @@ $(document).ready(function() {
 	  ]
 	});
   });
-  
-  
+
+
+  var map = L.map('map').setView([1.5921522, 127.9042711], 9);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+L.marker([1.575566, 127.935972]).addTo(map)
+    .bindPopup('<img src="../img/AtraksiWisata/BirdWatching/mahasiswa.jpg" width="100%"><br> This is the location.')
+
+
