@@ -75,7 +75,10 @@
                             <a class="dropdown-item" href="#">English</a>
                             <a class="dropdown-item" href="#">Indonesia</a>
                         </div> --}}
-                        <select class=" Langchange">
+                        <div id="imgLang" style="display: inline">
+                            <img class="mb-1" src="{{ asset('img/en.png') }}" height="19">
+                        </div>
+                        <select id="selectLang" class="Langchange">
                             <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>En <img class="mb-1" src="{{ asset('img/en.png') }}" height="19"></option>
                             <option value="id" {{ session()->get('locale') == 'id' ? 'selected' : '' }}>Id <img class="mb-1" src="{{ asset('img/id.png') }}" height="19"></option>
                         </select>
@@ -94,7 +97,7 @@
       <footer class="footer-distributed">
 
         <div class="container">
-          <div class="row">
+          <div class="row-footer row">
             <div class="col-md-4 col-sm-12">
 
               <h3>Talaga Paca</h3>
@@ -104,7 +107,7 @@
             </p>
               <hr style="border-top: 1px solid white;">
               <div class="footer-company-name d-flex" style="color: white">
-                <img src="{{ asset('img/phone.svg') }}" style="height: 3.5vw">
+                <img src="{{ asset('img/phone.svg') }}" style="height: 2rem">
                 <div>
                   Phone <br>
                   <b>+68 123456789</b>
@@ -164,9 +167,21 @@
     <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script type="text/javascript">
         var url = "{{ route('LangChange') }}";
+        var imgLang = $('#imgLang');
+        var selectLang=  $(".Langchange");
+
         $(".Langchange").change(function(){
             window.location.href = url + "?lang="+ $(this).val();
         });
+        console.log(selectLang.find(":selected").val())
+        if (selectLang.find(":selected").val()=='en') {
+                imgLang.html('')
+                imgLang.append(`<img class="mb-1" src="{{ asset('img/en.png') }}" height="19">`);
+        } else {
+                imgLang.html('')
+                imgLang.append(`<img class="mb-1" src="{{ asset('img/id.png') }}" height="19">`);
+        }
+
     </script>
     <script src="{{ asset('js/script.js') }}"></script>
 </html>

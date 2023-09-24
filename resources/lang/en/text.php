@@ -18,13 +18,13 @@ return [
     "atraksi" => [
         "title" => "TOURIST DESTINATIONS IN TALAGA PACA",
 		"jungle" => "Jungle Tracking at Talaga Paca",
-		"konten_jungle" => "Menyusuri hutan desa Talaga Paca merupakan sebuah perjalanan yang menyenangkan. Selama menyusuri hutan, kita dapat menikmati udara yang terasa sangat segar, diiringi kicauan burung dan suara alam lainnya membuat suasana hati menjadi damai dan tenang. Terdapat jalur jungle tracking menyusuri hutan alam tropis dataran rendah sejauh + 5 km. Rata-rata aktifitas jungle tracking ditempuh selama 2 jam. ",
-		"birdwatching" => "Bird Watching di Talaga Paca",
-		"konten_birdwatching" => "Di hutan desa Talaga Paca terdapat beragam satwa burung. Terdapat berbagai jenis burung endemic dan dilindungi seperti kakak tua putih (cacatua alba) dan Kasturi Ternate (Lorius garrulus). Berbagai jenis lainnya seperti Julang Irian (Rhyticeros Plicatus), Poak Halmahera (Pitta maxima), Gagak Halmahera (Corvus validus) dan Nuri Bayan (Eclectus roratus). Hutan desa Talaga Paca memiliki kerepatan tegakan hutan dan kelimpahan jenis satwa burung yang relative masih tinggi. Jika anda berminat melihat dan mendengarkan berbagai jenis burung di habitat alaminya, maka waktu yang tepat melakukannya adalah pada pagi atau sore hari.",
-        "gua" => "Gua O Kaho & O Mano",
-        "konten_gua" => "Terdapat dua buah gua lava yang merupakan hasil pembentukan gunung Merapi. Gua pertama dikenal dengan O Kaho Ma Aru’u yang berarti gua anjing, diyakini sebagai tempat hidupnya anjing milik leluhur masyarakat Talaga Paca yang bernama Memeua. Gua kedua dikenal dengan O Mano’o Ma Aru’u atau gua kelelawar. Di dalam gua ini terdapat banyak kelelawar. Ketika pengunjung berada di mulut gua, maka suara yang ditimbulkan seringkali menyebabkan kelelawar yang ada di dalam gua keluar. Gua ini dalam dan gelap, belum ada orang yang pernah masuk hingga ke dalamnya. Dasar atau lantai gua dipenuhi dengan kotoran kelelawar. Kedua gua hanya berjarak sekitar 100 meter dan berada di pinggir telaga/danau ",
-        "keliling" => "Keliling Danau",
-        "konten_keliling" => "Anda bisa berwisata mengelilingi danau dengan perahu terbuka yang akan memanjakan diri dengan pemandangan hutan yang sangat indah diiringi oleh tiupan angina yang menyejukkan serta percikan air yang menyegarkan. Pengelola wisata melengkapi setiap pengunjung dengan life jacket sebagai sarana keselamatan.",
+		"konten_jungle" => "Exploring the forest of Talaga Paca village is a pleasant journey. During the walk through the forest, we can enjoy the air that feels very fresh, accompanied by the chirping of birds and other natural sounds make the mood to be peaceful and calm. There is a jungle tracking path along the lowland tropical natural forest for about 5 km. The average jungle tracking activity is taken for 2 hours.",
+		"birdwatching" => "Bird Watching at Talaga Paca",
+		"konten_birdwatching" => "In the forest of Talaga Paca village there are various bird species. There are various types of endemic and protected birds, such as the white parrot (cacatua alba) and the Kasturi Ternate (Lorius garrulus). Other various species such as the Julang  Irian (Rhyticeros Plicatus), Poak Halmahera (Pitta maxima), Halmahera Crow (Corvus validus) and Nuri Bayan (Eclectus roratus). The forest  of Talaga Paca village has a relatively high density of forest stands and an abundance of bird species. If you are interested in seeing and listening to various types of birds in their natural habitat, then the right time to do it is in the morning or evening.",
+        "gua" => "O Kaho Ma Aru’u & O Mano’o Ma Aru’u Caves",
+        "konten_gua" => "There are two lava caves which are the result of the formation of volcano. The first cave is known as O Kaho Ma Aru’u which means dog cave, it is believed to be the place where a dog belonging to the ancestors of the Talaga Paca people named Memeua lived. The second cave is known as O Mano’o Ma Aru’u or bat cave. In this cave there are many bats. When visitors are at the mouth of the cave, the sound generated often causes the bats in the cave out. This cave is deep and dark, no one has ever entered it. The bottom or floor of the cave is filled with bat droppings. The two caves are only about 100 meters apart and are on the edge of the lake.",
+        "keliling" => "Tour Around the Lake",
+        "konten_keliling" => "You can take a tour around the lake with an open boat that will pamper yourself with a very beautiful forest scenery accompanied by a soothing breeze and refreshing splash of water. The Tour managers equip each visitor with a life jacket as a means of safety.",
 	],
 
     "fasilitas" => [
@@ -53,7 +53,7 @@ return [
 		"produk" => "Local Product",
         "event" => "Tourist Event",
         "publikasi" => "Publication",
-        "akses" => "Acess & Contact Person",
+        "akses" => "Access & Contact Person",
         "tentang" => "About",
 	],
 ];

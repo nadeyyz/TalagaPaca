@@ -14,7 +14,7 @@
                                     <span class="img-atraksi-title">Jungle Tracking</span>
                                 </div>
                                 <div class="col-md-8 col-sm-12">
-                                    <div class="text-description text-sm">Menyusuri hutan desa Talaga Paca merupakan sebuah perjalanan yang menyenangkan. Selama menyusuri hutan, kita dapat menikmati udara yang terasa sangat segar.</div>
+                                    <div class="text-description text-sm">{{ substr(__('text.atraksi.konten_jungle'), 0, 155) }}...</div>
                                     <button onclick="window.location='{{ url("/atraksi-wisata/jungle-tracking") }}'" class="btn btn-black-transparent">Selengkapnya <i class="fa-solid fa-arrow-right"></i></button>
                                 </div>
                             </div>
@@ -26,7 +26,7 @@
                                     <span class="img-atraksi-title">Bird Watching</span>
                                 </div>
                                 <div class="col-md-8 col-sm-12">
-                                    <div class="text-description text-sm">Di hutan desa Talaga Paca terdapat beragam satwa burung, terdapat berbagai jenis burung endemik dan dilindungi seperti Kakak tua putih (Cacatua alba) dan Kasturi ternate (Lorius garrulus).</div>
+                                    <div class="text-description text-sm">{{ substr(__('text.atraksi.konten_birdwatching'), 0, 155) }}...</div>
                                     <button onclick="window.location='{{ url("/atraksi-wisata/birdwatching") }}'" class="btn btn-black-transparent">Selengkapnya <i class="fa-solid fa-arrow-right"></i></button>
                                 </div>
                             </div>
@@ -38,7 +38,7 @@
                                     <span class="img-atraksi-title">Gua</span>
                                 </div>
                                 <div class="col-md-8 col-sm-12">
-                                    <div class="text-description text-sm">Terdapat dua gua lava yang merupakan hasil pembentukan gunung Merapi. Gua pertama dikenal dengan O Kaho Ma Aru’u dan Gua kedua dikenal dengan O Mano’o Ma Aru’u.</div>
+                                    <div class="text-description text-sm">{{ substr(__('text.atraksi.konten_gua'), 0, 155) }}...</div>
                                     <button onclick="window.location='{{ url("/atraksi-wisata/gua") }}'" class="btn btn-black-transparent">Selengkapnya <i class="fa-solid fa-arrow-right"></i></button>
                                 </div>
                             </div>
@@ -50,7 +50,7 @@
                                     <span class="img-atraksi-title">Keliling Danau</span>
                                 </div>
                                 <div class="col-md-8 col-sm-12">
-                                    <div class="text-description text-sm">Anda bisa berwisata mengelilingi danau dengan perahu terbuka yang akan memanjakan diri dengan pemandangan hutan yang sangat indah</div>
+                                    <div class="text-description text-sm">{{ substr(__('text.atraksi.konten_keliling'), 0, 155) }}...</div>
                                     <button onclick="window.location='{{ url("/atraksi-wisata/keliling-danau") }}'" class="btn btn-black-transparent">Selengkapnya <i class="fa-solid fa-arrow-right"></i></button>
                                 </div>
                             </div>

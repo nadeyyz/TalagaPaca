@@ -189,6 +189,7 @@ body{
 #jumbotron p{
 	text-align: center;
 	margin: 0;
+    font-size: 1.25rem;
 	padding-top: 10px;
 	opacity: 1;
 	transform: translate(0);
@@ -767,7 +768,7 @@ button:hover .button-text {
 
 .footer-distributed .footer-company-name{
 	color:  #222;
-	font-size: 14px;
+	font-size: 100%;
 	font-weight: normal;
 	margin: 0;
 }
@@ -1018,4 +1019,57 @@ button:hover .button-text {
 
  .w-80 {
     width: 75%;
+ }
+
+.Langchange {
+    border: none;
+    color: #19A7CE;
+ }
+
+ select option{
+
+    font-size: 1.25rem;
+}
+
+@media (max-width: 576px) {
+    .jumbotron-title {
+        font-size: 12vw;
+    }
+    #jumbotron p {
+
+        font-size: 0.95rem;
+
+    }
+    .text-title {
+        width: 100%;
+    }
+    .text-description {
+        color: #146C94;
+        width: 90% !important;
+    }
+    .footer-company-name{
+        display: none !important;
+    }
+    .menu-footer{
+        display: none !important;
+    }
+    .row-footer {
+        text-align: center;
+    }
+    #jumbotron {
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+    .w-80 {
+        width: 90% !important;
+    }
+    .text-justify {
+        text-align: center!important;
+    }
+
+ }
+
+@media (max-width: 768px) {
+
  }
